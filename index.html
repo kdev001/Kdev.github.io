@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleb Dale | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">KD<span class="accent">.</span></div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">Software Developer</div>
+            <h1 class="hero-title reveal">
+                Hi, I'm <span class="gradient-text">Kaleb Dale</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                I build <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+            </p>
+            <div class="hero-buttons reveal">
+                <button class="btn btn-primary" id="open-resume-hero">View Resume</button>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat">
+                    <span class="stat-number" data-target="6">0</span><span class="accent">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span><span class="accent">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4">0</span><span class="accent">+</span>
+                    <span class="stat-label">Languages</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About <span class="accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-card-icon"><img src="Assets/Images/education_icon.png" alt="Education icon"></div>
+                    <h3>Education</h3>
+                    <p>Bachelor of Science in Software Development from Western Governors University</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-card-icon"><img src="Assets/Images/certifications_icon.png" alt="Certifications icon"></div>
+                    <h3>Certifications</h3>
+                    <p>CompTIA A+, CompTIA Project+, and ITIL 4 certified professional</p>
+                </div>
+                <div class="about-card reveal">
+                    <div class="about-card-icon"><img src="Assets/Images/passion_icon.png" alt="Passion icon"></div>
+                    <h3>Passion</h3>
+                    <p>Always excited to learn new technologies and take on challenging projects</p>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <p>
+                    I am a graduate from college with a Bachelor of Science in Software Development. My goal is to obtain a position that enables me to cultivate my skillset while making impactful contributions to a winning team. I have experience with Dart, Java, Python, PHP, HTML, CSS, JavaScript, SQL, and C++. I look forward to being provided with challenges that test my current knowledge and put me on a path to honing my skills.
+                </p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">May 2021 - Oct 2022</span>
+                        <h3>Western Governors University</h3>
+                        <p>Bachelor of Science, Software Development</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2018 - May 2021</span>
+                        <h3>Arkansas State University</h3>
+                        <p>Certificate of Proficiency, Networking</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2017 - May 2021</span>
+                        <h3>Marion High School</h3>
+                        <p>High School Diploma, Computer Hardware</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title reveal">My <span class="accent">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Dart</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Java</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Python</div>
+                        <div class="skill-item"><span class="skill-dot"></span>PHP</div>
+                        <div class="skill-item"><span class="skill-dot"></span>C++</div>
+                        <div class="skill-item"><span class="skill-dot"></span>SQL</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>HTML5</div>
+                        <div class="skill-item"><span class="skill-dot"></span>CSS3</div>
+                        <div class="skill-item"><span class="skill-dot"></span>JavaScript</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Bootstrap 5</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Thymeleaf</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Backend & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Django</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Spring Boot</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Hibernate</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Docker</div>
+                        <div class="skill-item"><span class="skill-dot"></span>REST APIs</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">Concepts</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>OOP</div>
+                        <div class="skill-item"><span class="skill-dot"></span>MVC</div>
+                        <div class="skill-item"><span class="skill-dot"></span>GUI Design</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Version Control</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Cloud Computing</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Networking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="accent">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/DigiBook_icon.png" alt="DigiBook icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">Active</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">DigiBook</h3>
+                    <p class="project-description">
+                        A full-stack digital library with Python and Django. Users can browse 50+ public-domain classics, borrow books on 30-day terms, and read in a built-in e-reader with pagination, auto-generated TOC, and localStorage bookmarks.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span><span>Django</span><span>JavaScript</span><span>Docker</span><span>HTML5</span><span>CSS</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; Hero Slider</span>
+                        <span>&#10003; Genre Categories</span>
+                        <span>&#10003; Live Search</span>
+                        <span>&#10003; E-Reader</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://digibook-xkhm.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/Appointify_icon.png" alt="Appointify icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">Active</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Appointment Manager</h3>
+                    <p class="project-description">
+                        Rebuilt WGU C195 scheduling app as a full-stack web app with Spring Boot. Features secure login with activity logging, CRUD workflows with validation, and interactive reports on appointment types, contact schedules, and customer activity.
+                    </p>
+                    <div class="project-tech">
+                        <span>Spring Boot</span><span>Hibernate</span><span>Thymeleaf</span><span>Bootstrap 5</span><span>PostgreSQL</span><span>Docker</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; Secure Login</span>
+                        <span>&#10003; CRUD Workflows</span>
+                        <span>&#10003; Reports</span>
+                        <span>&#10003; Activity Logging</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://appointify-wmin.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/RosterRadar_icon.png" alt="RosterRadar icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">Active</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Student Roster</h3>
+                    <p class="project-description">
+                        A C++ project redesigned beyond the original CLI assignment into a full-stack app. Object-oriented core handles CRUD, average-days-in-course, invalid email detection, and degree filtering with a browser dashboard.
+                    </p>
+                    <div class="project-tech">
+                        <span>C++</span><span>REST API</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Makefile</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; OOP Design</span>
+                        <span>&#10003; Browser Dashboard</span>
+                        <span>&#10003; Memory Management</span>
+                        <span>&#10003; REST API</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://rosterradar-4dgk.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">View Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/coinside_icon.png" alt="CoinSide icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">App Store</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">CoinSide</h3>
+                    <p class="project-description">
+                        A party game designed for friends and family. Players answer questions anonymously while everyone guesses who answered based on the responses. Maintained through the full application lifecycle.
+                    </p>
+                    <div class="project-tech">
+                        <span>Dart</span><span>Flutter</span><span>iOS</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; Anonymous Answers</span>
+                        <span>&#10003; All Ages</span>
+                        <span>&#10003; App Store</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/Note2self_icon.png" alt="Note2Self icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">App Store</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Note2Self</h3>
+                    <p class="project-description">
+                        A note-taking companion app that ensures users never miss important things by allowing them to create notes with timed notifications. Designed wireframes, built frontend/backend, tested and deployed.
+                    </p>
+                    <div class="project-tech">
+                        <span>Dart</span><span>Flutter</span><span>iOS</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; Timed Notifications</span>
+                        <span>&#10003; Note Creation</span>
+                        <span>&#10003; App Store</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-card-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon"><img src="Assets/Images/ontime_icon.png" alt="On-Time icon"></div>
+                        <div class="project-links">
+                            <span class="project-status">App Store</span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">On-Time</h3>
+                    <p class="project-description">
+                        A calendar app designed to help users manage work-life balance. Built with project management methodologies, design patterns, and various programming languages. Maintained with robust, reusable code.
+                    </p>
+                    <div class="project-tech">
+                        <span>Dart</span><span>Flutter</span><span>iOS</span>
+                    </div>
+                    <div class="project-features">
+                        <span>&#10003; Calendar Management</span>
+                        <span>&#10003; Work-Life Balance</span>
+                        <span>&#10003; App Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title reveal">Work <span class="accent">Experience</span></h2>
+            <div class="experience-list">
+                <div class="experience-item reveal">
+                    <div class="experience-date">Oct 2024 - Present</div>
+                    <div class="experience-content">
+                        <h3>Associate</h3>
+                        <h4>Walmart &mdash; Marion, AR</h4>
+                        <p>I played a vital role in providing exceptional customer service by assisting shoppers in locating products, answering questions, and ensuring a positive shopping experience. My responsibilities included organizing and maintaining inventory, and ensuring products were accurately labeled and priced. I also provided product knowledge to customers, maintained safety standards. My proactive approach and attention to detail helped maintain a welcoming and efficient shopping environment for all customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span class="accent">Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <p class="contact-text">I'm currently open to new opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:kalebdevelop76@gmail.com" class="contact-card">
+                            <div class="contact-card-icon"><img src="Assets/Images/email_icon.png" alt="Email icon"></div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">kalebdevelop76@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+18706352093" class="contact-card">
+                            <div class="contact-card-icon"><img src="Assets/Images/phone_icon.png" alt="Phone icon"></div>
+                            <div>
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">(870) 635-2093</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="contact-card-icon"><img src="Assets/Images/location_icon.png" alt="Location icon"></div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">Marion, AR 72364</span>
+                            </div>
+                        </div>
+                        <a href="https://www.linkedin.com/in/kaleb-dale-485453279/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon"><img src="Assets/Images/linkdin_icon.png" alt="LinkedIn icon"></div>
+                            <div>
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">Kaleb Dale</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/kdev001" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card-icon"><img src="Assets/Images/github_icon.png" alt="GitHub icon"></div>
+                            <div>
+                                <span class="contact-card-label">GitHub</span>
+                                <span class="contact-card-value">kdev001</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form reveal" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22L11 13L2 9L22 2Z"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">KD<span class="accent">.</span></div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/kaleb-dale-485453279/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">in</a>
+                    <a href="https://github.com/kdev001" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">&#9883;</a>
+                </div>
+                <p>&copy; 2026 Kaleb Dale. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div class="modal-overlay" id="resume-modal" aria-hidden="true">
+        <div class="modal-container" role="dialog" aria-modal="true" aria-label="Resume Viewer">
+            <div class="modal-header">
+                <h3 class="modal-title">My Resume</h3>
+                <div class="modal-actions">
+                    <div class="modal-zoom" id="resume-zoom" role="group" aria-label="Zoom controls">
+                        <button class="zoom-btn" id="zoom-out" aria-label="Zoom out">&minus;</button>
+                        <span class="zoom-value" id="zoom-value">100%</span>
+                        <button class="zoom-btn" id="zoom-in" aria-label="Zoom in">+</button>
+                    </div>
+                    <a href="Assets/Files/KalebResume%208:8:26.pdf" target="_blank" rel="noopener noreferrer" class="modal-open-link">Open in New Tab</a>
+                    <button class="modal-close" id="close-resume" aria-label="Close resume viewer">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body" id="resume-scroll">
+                <div class="resume-zoom-stage" id="zoom-stage">
+                    <iframe
+                        id="resume-frame"
+                        src="Assets/Files/KalebResume%208:8:26.pdf"
+                        title="Resume PDF"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
